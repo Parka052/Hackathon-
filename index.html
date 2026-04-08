@@ -1,0 +1,19 @@
+<div class="header">
+    <h1>EmprendiShop</h1>
+    <div id="btn-carrito" onclick="mostrarCarrito()">🛒 Canasta (<span id="contador">0</span>)</div>
+</div>
+
+<div id="contenedor-tiendas">
+    </div>
+
+<div id="modal-pago" style="display:none;">
+    <h2>Finalizar Compra</h2>
+    <input type="text" id="cliente" placeholder="Nombre completo">
+    <input type="text" id="direccion" placeholder="Dirección">
+    <select id="metodo">
+        <option value="pse">PSE</option>
+        <option value="breve">Llave de BREVE</option>
+        <option value="tarjeta">Tarjeta de Crédito/Débito</option>
+    </select>
+    <button onclick="procesarPago()" style="background: green; color: white;">PAGAR :D</button>
+</div>
